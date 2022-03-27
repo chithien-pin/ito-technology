@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url(../../fonts/Noto_Sans/NotoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Noto Sans Bold";
+  src: url(../../fonts/Noto_Sans/NotoSans-Bold.ttf);
+}
+
+#ito-page {
+  background-color: #f6fdff;
+  font-family: "Noto Sans";
+
+  header.header {
+    background-color: white;
+
+    .navbar {
+      &__items-right {
+        .dropdown-toggle {
+          color: #4C4C4C;
+          font-weight: 500;
+
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+
+  section.ito-body {
+    margin-top: 60px;
+    padding-bottom: 120px;
+    position: relative;
+
+    &:after {
+      content: '';
+      background: url("../../images/bg-left-bottom.png") no-repeat;
+      position: absolute;
+      width: 1064px;
+      height: 442px;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:before {
+      content: '';
+      background: url("../../images/bg-right-top.png") no-repeat;
+      position: absolute;
+      width: 1015px;
+      height: 400px;
+      top: -60px;
+      right: 0;
+    }
+
+    .login-form {
+      &-group {
+        &__outline {
+          border-radius: 15px;
+          overflow: hidden;
+          z-index: 1;
+
+          .image-left {
+            img {
+              width: 100%;
+            }
+          }
+
+          .form-right {
+            #form-login {
+              padding: 110px;
+
+              .form-login_title {
+                text-align: center;
+                background: linear-gradient(150.95deg, #72D3FF -4.34%, #137AC2 103.83%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 60px;
+
+                h2 {
+                  font-size: 32px;
+                  font-family: "Noto Sans Bold";
+                  line-height: 1.5;
+                }
+              }
+
+              form {
+                .form-group {
+                  position: relative;
+                  .custom-checkbox {
+                    .custom-control-label {
+                      color: #696969;
+                    }
+                  }
+                  #btn-toggle-pwd{
+                    position: absolute;
+                    right: 10px;
+                    top: 40px;
+                    cursor: pointer;
+                    &:hover{
+
+                    }
+                  }
+                }
+                .cta-login{
+                  margin-top: 180px;
+                  background-color: #F05A28;
+                  border-radius: 25px;
+                  button.btn{
+                    font-size: 16px;
+                    color: white;
+                    margin: 5px auto;
+                  }
+                }
+
+                .register-text {
+                  text-align: center;
+                  a {
+                    color: #F05A28;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
