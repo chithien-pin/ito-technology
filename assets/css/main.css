@@ -27,18 +27,18 @@
 }
 #ito-page section.ito-body:after {
   content: "";
-  background: url("../../images/bg-left-bottom.png") no-repeat;
+  background: url("../../images/bg-left-bottom.png") no-repeat bottom left;
   position: absolute;
-  width: 1064px;
+  width: 100%;
   height: 442px;
   bottom: 0;
   left: 0;
 }
 #ito-page section.ito-body:before {
   content: "";
-  background: url("../../images/bg-right-top.png") no-repeat;
+  background: url("../../images/bg-right-top.png") no-repeat top right;
   position: absolute;
-  width: 1015px;
+  width: 100%;
   height: 400px;
   top: -60px;
   right: 0;
@@ -93,6 +93,43 @@
 }
 #ito-page section.ito-body .login-form-group__outline .form-right #form-login form .register-text a {
   color: #F05A28;
+}
+
+@media screen and (max-width: 1440px) {
+  #ito-page section.ito-body {
+    padding-bottom: 60px;
+  }
+  #ito-page section.ito-body .login-form-group__outline .form-right #form-login {
+    padding: 50px;
+  }
+  #ito-page section.ito-body .login-form-group__outline .form-right #form-login .form-login_title {
+    margin-bottom: 10%;
+  }
+  #ito-page section.ito-body .login-form-group__outline .form-right #form-login form .cta-login {
+    margin-top: 25%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #ito-page section.ito-body {
+    padding-bottom: 60px;
+  }
+  #ito-page section.ito-body .login-form-group__outline .form-right #form-login {
+    padding: 5%;
+  }
+  #ito-page section.ito-body .login-form-group__outline .form-right #form-login form .cta-login {
+    margin-top: 15%;
+  }
+}
+@media screen and (max-width: 990px) {
+  #ito-page section.ito-body {
+    padding-bottom: 60px;
+  }
+  #ito-page section.ito-body .login-form-group__outline .form-right #form-login {
+    padding: 20px;
+  }
+  #ito-page section.ito-body .login-form-group__outline .form-right #form-login form .cta-login {
+    margin-top: 15px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
