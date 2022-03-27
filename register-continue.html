@@ -48,12 +48,12 @@
                     <div class="col-6 form-right p-0">
                         <div id="form-login">
                             <div class="form-login_title">
-                                <h2>Đăng nhập</h2>
+                                <h2>Đăng ký</h2>
                             </div>
-                            <form class="form" action="/">
+                            <div class="form">
                                 <div class="form-group">
-                                    <label for="id">Tên đăng nhập</label>
-                                    <input type="text" id="id" class="form-control" name="LoginForm[identity]"
+                                    <label for="name">Tên đăng nhập</label>
+                                    <input type="text" id="name" class="form-control" name="LoginForm[identity]"
                                            aria-required="true" aria-invalid="false" placeholder="Typing">
                                     <div class="invalid-feedback"></div>
                                 </div>
@@ -62,41 +62,39 @@
                                     <label for="inputPassword">Mật khẩu</label>
                                     <input type="password" id="inputPassword" class="form-control" name="password"
                                            aria-required="true" aria-invalid="false">
-                                    <img onclick="togglePassword('#inputPassword')" class="btn-toggle-pwd" src="./images/show-pass.png" alt="Ẩn / hiện mật khẩu">
+                                    <img onclick="togglePassword('#inputPassword')" class="btn-toggle-pwd"
+                                         src="./images/show-pass.png" alt="Ẩn / hiện mật khẩu">
                                 </div>
 
-                                <div class="form-row m-0 justify-content-between">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" id="rememberme" class="custom-control-input"
-                                                   name="rememberMe" value="1" checked="">
-                                            <label class="custom-control-label" for="rememberme">Nhớ mật khẩu</label>
-                                            <div class="invalid-feedback"></div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#forgotPasswordModal">Quên mật khẩu?</a>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="inputComfirmPassword">Nhập lại mật khẩu</label>
+                                    <input type="password" id="inputComfirmPassword" class="form-control"
+                                           name="password"
+                                           aria-required="true" aria-invalid="false">
+                                    <img onclick="togglePassword('#inputComfirmPassword')" class="btn-toggle-pwd"
+                                         src="./images/show-pass.png" alt="Ẩn / hiện mật khẩu">
                                 </div>
+
 
                                 <div class="form-group text-center cta-login">
-                                    <button type="submit" class="d-block w-100 form-group btn">
-                                        Đăng nhập
+                                    <button type="submit" class="d-block w-100 form-group btn" data-toggle="modal"
+                                            data-target="#verifyOtp">
+                                        Hoàn thành
                                     </button>
                                 </div>
 
                                 <div class="form-group register-text">
-                                    Bạn chưa có tài khoản? <a href="./register.html">Đăng ký</a>
+                                    Bạn có tài khoản? <a href="./login.html">Đăng nhập</a>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Modal -->
-    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <!--modal-->
+    <div class="modal fade" id="verifyOtp" tabindex="-1" aria-labelledby="verifyOtpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
@@ -104,15 +102,25 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <div class="form-forgot-password_title">
-                        <h3>Quên mật khẩu</h3>
-                        <p class="m-0">Nhập số điện thoại hoặc email bạn đã đăng ký</p>
+                        <h3>Nhập mã xác thực</h3>
+                        <p class="m-0">Chúng tôi sẽ gửi mã xác minh đến</p>
+                        <p class="font-weight-bold">+84123456789</p>
                     </div>
-                    <form action="/">
-                        <div class="form-group">
-                            <input type="text" id="forgotPassword" class="form-control" name="forgotPassword"
-                                   aria-required="true" aria-invalid="false" placeholder="Typing">
+                    <form method="get" class="form digit-group" data-group-name="digits" data-autosubmit="false"
+                          autocomplete="off">
+                        <div class="form-row m-0 justify-content-between">
+                            <input class="form-group" type="text" id="digit-1" name="digit-1" data-next="digit-2"/>
+                            <input class="form-group" type="text" id="digit-2" name="digit-2" data-next="digit-3"
+                                   data-previous="digit-1"/>
+                            <input class="form-group" type="text" id="digit-3" name="digit-3" data-next="digit-4"
+                                   data-previous="digit-2"/>
+                            <input class="form-group" type="text" id="digit-4" name="digit-4" data-next="digit-5"
+                                   data-previous="digit-3"/>
+                            <input class="form-group" type="text" id="digit-5" name="digit-5" data-next="digit-6"
+                                   data-previous="digit-4"/>
+                            <input class="form-group" type="text" id="digit-6" name="digit-6" data-previous="digit-5"/>
                         </div>
-                        <div class="form-group text-center cta-forgot-password">
+                        <div class="form-group text-center cta-verify">
                             <button type="submit" class="d-block w-100 form-group btn">
                                 Xác nhận
                             </button>

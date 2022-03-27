@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url(../../fonts/Noto_Sans/NotoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Noto Sans Bold";
+  src: url(../../fonts/Noto_Sans/NotoSans-Bold.ttf);
+}
+
+#ito-page {
+  section.ito-body {
+    .login-form {
+      &-group {
+        &__outline {
+          .form-right {
+            #form-login {
+              .form {
+                .form-group {
+                  label {
+                    span {
+                      color: #F05A28;
+                    }
+                  }
+
+                  .form-check {
+                    &.radio-item {
+                      padding: 0;
+
+                      input[type=radio] {
+                        display: none;
+
+                        &:checked + label:before {
+                          border-color: #F05A28;
+                        }
+
+                        &:checked + label:after {
+                          border-radius: 11px;
+                          width: 10px;
+                          height: 10px;
+                          position: absolute;
+                          top: 7px;
+                          left: 4px;
+                          content: "";
+                          display: block;
+                          background: #F05A28;
+                        }
+                      }
+
+                      label {
+                        &:before {
+                          content: "";
+                          display: inline-block;
+                          position: relative;
+                          top: 3px;
+                          margin: 0 5px 0 0;
+                          width: 18px;
+                          height: 18px;
+                          border-radius: 11px;
+                          border: 2px solid #777;
+                          background-color: transparent;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal#verifyOtp {
+    .modal-dialog {
+      .modal-body {
+        position: relative;
+        text-align: center;
+        padding: 3rem;
+
+        button.close {
+          position: absolute;
+          top: 5px;
+          right: 15px;
+          font-size: 30px;
+        }
+
+        .form-forgot-password_title {
+          h3 {
+            font-weight: 600;
+            font-family: "Noto Sans Bold";
+          }
+
+          p {
+            color: #696969;
+
+            &.font-weight-bold {
+              color: #3a3a3a;
+            }
+          }
+        }
+
+        .form.digit-group {
+          .form-row {
+            .form-group {
+              width: 50px;
+              height: 50px;
+              border: 1px solid #F0F0F0;
+              border-radius: 5px;
+              background-color: rgba(240, 240, 240, 0.2);
+              text-align: center;
+              &:focus-visible{
+                outline-color: #F05A28;
+              }
+            }
+          }
+          .cta-verify {
+            background-color: #F05A28;
+            border-radius: 25px;
+
+            button.btn {
+              font-size: 16px;
+              color: white;
+              margin: 5px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

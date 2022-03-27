@@ -48,45 +48,67 @@
                     <div class="col-6 form-right p-0">
                         <div id="form-login">
                             <div class="form-login_title">
-                                <h2>Đăng nhập</h2>
+                                <h2>Đăng ký</h2>
                             </div>
-                            <form class="form" action="/">
+                            <form class="form" action="./register-continue.html">
                                 <div class="form-group">
-                                    <label for="id">Tên đăng nhập</label>
-                                    <input type="text" id="id" class="form-control" name="LoginForm[identity]"
+                                    <label for="name">Họ tên <span>*</span></label>
+                                    <input type="text" id="name" class="form-control" name="LoginForm[identity]"
                                            aria-required="true" aria-invalid="false" placeholder="Typing">
                                     <div class="invalid-feedback"></div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="inputPassword">Mật khẩu</label>
-                                    <input type="password" id="inputPassword" class="form-control" name="password"
-                                           aria-required="true" aria-invalid="false">
-                                    <img onclick="togglePassword('#inputPassword')" class="btn-toggle-pwd" src="./images/show-pass.png" alt="Ẩn / hiện mật khẩu">
+                                    <label for="email">Email <span>*</span></label>
+                                    <input type="email" id="email" class="form-control" name="LoginForm[identity]"
+                                           aria-required="true" aria-invalid="false" placeholder="Typing">
+                                    <div class="invalid-feedback"></div>
                                 </div>
 
-                                <div class="form-row m-0 justify-content-between">
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" id="rememberme" class="custom-control-input"
-                                                   name="rememberMe" value="1" checked="">
-                                            <label class="custom-control-label" for="rememberme">Nhớ mật khẩu</label>
-                                            <div class="invalid-feedback"></div>
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại <span>*</span></label>
+                                    <input type="text" id="phone" class="form-control" name="LoginForm[identity]"
+                                           aria-required="true" aria-invalid="false" placeholder="Typing" maxlength="10">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="male-female">Giới tính <span>*</span></label>
+                                    <div id="male-female" class="form-row m-0">
+                                        <div class="form-check radio-item">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="male" value="male" checked>
+                                            <label class="form-check-label" for="male">Nam</label>
+                                        </div>
+                                        <div class="form-check ml-5 radio-item">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="female" value="female">
+                                            <label class="form-check-label" for="female">Nữ</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#forgotPasswordModal">Quên mật khẩu?</a>
-                                    </div>
                                 </div>
+
+                                <div class="form-group">
+                                    <label for="dayOfBirth">Ngày sinh <span>*</span></label>
+                                    <input type="date" id="dayOfBirth" class="form-control" name="LoginForm[identity]"
+                                           aria-required="true" aria-invalid="false" placeholder="Typing">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="address">Địa chỉ <span>*</span></label>
+                                    <input type="text" id="address" class="form-control" name="LoginForm[identity]"
+                                           aria-required="true" aria-invalid="false" placeholder="Typing">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
 
                                 <div class="form-group text-center cta-login">
                                     <button type="submit" class="d-block w-100 form-group btn">
-                                        Đăng nhập
+                                       Tiếp tục
                                     </button>
                                 </div>
 
                                 <div class="form-group register-text">
-                                    Bạn chưa có tài khoản? <a href="./register.html">Đăng ký</a>
+                                    Bạn có tài khoản? <a href="./login.html">Đăng nhập</a>
                                 </div>
                             </form>
                         </div>
@@ -95,33 +117,6 @@
             </div>
         </div>
     </section>
-    <!-- Modal -->
-    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="form-forgot-password_title">
-                        <h3>Quên mật khẩu</h3>
-                        <p class="m-0">Nhập số điện thoại hoặc email bạn đã đăng ký</p>
-                    </div>
-                    <form action="/">
-                        <div class="form-group">
-                            <input type="text" id="forgotPassword" class="form-control" name="forgotPassword"
-                                   aria-required="true" aria-invalid="false" placeholder="Typing">
-                        </div>
-                        <div class="form-group text-center cta-forgot-password">
-                            <button type="submit" class="d-block w-100 form-group btn">
-                                Xác nhận
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <script defer src="./assets/js/jquery.js"></script>
