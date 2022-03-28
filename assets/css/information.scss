@@ -1,7 +1,5 @@
 #ito-page{
-  header.header{
-    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
-  }
+
   #menu-sidebar{
     background-color: #1a75ba;
     width: 280px;
@@ -19,36 +17,43 @@
         list-style: none;
         padding: 0;
         width: 100%;
-        li.menu-item{
+
+        li.menu-item {
           display: flex;
           align-items: center;
           padding: 10px;
           border-radius: 4px;
           cursor: pointer;
           margin-bottom: 10px;
-          .icon{
+
+          svg {
             width: 25px;
             margin-right: 13px;
-            img{
+
+            img {
               width: 100%;
             }
           }
-          .title{
+
+          .title {
             color: white;
           }
-          &.active{
+
+          &.active {
             background-color: #5196cc;
           }
         }
       }
     }
-    .cta-logout{
+
+    .cta-logout {
       margin: 150px auto auto;
       background-color: #F05A28;
       border-radius: 25px;
       width: 80%;
       text-align: center;
-      a.btn{
+
+      a.btn {
         font-size: 16px;
         color: white;
         margin: 5px auto;
@@ -56,8 +61,138 @@
       }
     }
   }
-  .infomation-page{
+
+  .information-page {
     padding-left: 280px;
-    min-height: 100vh!important;
+    min-height: 100vh !important;
+
+    header.header {
+      box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    .information-body {
+      padding: 24px 34px 24px 60px;
+
+      &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #232323;
+      }
+
+      .information-personal, .information-social {
+        padding: 20px 50px;
+        background: #FFFFFF;
+        box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .title {
+            p {
+              color: #232323;
+              font-weight: 700;
+              font-size: 16px;
+            }
+          }
+
+          .button-edit {
+            border: 1px solid #F05A28;
+            background-color: white;
+            border-radius: 25px;
+            text-align: center;
+
+            .btn {
+              font-size: 16px;
+              color: #F05A28;
+              padding: 5px 25px;
+              font-weight: 600;
+            }
+          }
+        }
+
+        &__body {
+          .avatar {
+            img {
+              width: 80%;
+            }
+          }
+
+          .information-personal__content {
+            .name-position {
+              p.name {
+                color: #F05A28;
+                font-weight: 700;
+                font-size: 24px;
+                margin: 0;
+              }
+
+              span.position {
+                color: #696969;
+                font-size: 14px;
+              }
+            }
+
+            .table-information {
+              padding-top: 24px;
+              table.table.table-striped {
+                tbody {
+                  th, td {
+                    border: 0;
+                  }
+
+                  tr:nth-of-type(odd) {
+                    background: rgba(240, 240, 240, 0.4);
+                  }
+
+                  th {
+                    font-size: 14px;
+                    color: #696969;
+                    font-weight: 400;
+                  }
+
+                  td {
+                    color: #232323;
+                  }
+                }
+              }
+            }
+          }
+
+          .information-social__content{
+            .table-information {
+              padding-top: 10px;
+              table.table.table-striped {
+                tbody {
+                  th, td {
+                    border: 0;
+                  }
+
+                  tr:nth-of-type(odd) {
+                    background: #F6FDFF;
+                  }
+
+                  th {
+                    font-size: 14px;
+                    color: #696969;
+                    font-weight: 400;
+                  }
+
+                  td {
+                    color: #232323;
+                    button{
+                      background: transparent;
+                      border: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

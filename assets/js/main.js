@@ -23,8 +23,25 @@ window.addEventListener('DOMContentLoaded', (event) => {
             }
         });
     });
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
 });
 
 function togglePassword(ele) {
     $(ele).attr('type') === 'password' ? $(ele).attr('type', 'text') : $(ele).attr('type', 'password')
+}
+function copyToClipboard(ele) {
+    /* Get the text field */
+    var copyText = document.getElementById(ele);
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.value);
+
+    /* Alert the copied text */
+    return copyText.value
 }

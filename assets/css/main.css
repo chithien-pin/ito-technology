@@ -250,9 +250,6 @@
   margin: 5px auto;
 }
 
-#ito-page header.header {
-  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
-}
 #ito-page #menu-sidebar {
   background-color: #1a75ba;
   width: 280px;
@@ -281,11 +278,11 @@
   cursor: pointer;
   margin-bottom: 10px;
 }
-#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item .icon {
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item svg {
   width: 25px;
   margin-right: 13px;
 }
-#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item .icon img {
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item svg img {
   width: 100%;
 }
 #ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item .title {
@@ -307,9 +304,99 @@
   margin: 5px auto;
   padding: 12px;
 }
-#ito-page .infomation-page {
+#ito-page .information-page {
   padding-left: 280px;
   min-height: 100vh !important;
+}
+#ito-page .information-page header.header {
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+}
+#ito-page .information-page .information-body {
+  padding: 24px 34px 24px 60px;
+}
+#ito-page .information-page .information-body__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #232323;
+}
+#ito-page .information-page .information-body .information-personal, #ito-page .information-page .information-body .information-social {
+  padding: 20px 50px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+#ito-page .information-page .information-body .information-personal__header, #ito-page .information-page .information-body .information-social__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ito-page .information-page .information-body .information-personal__header .title p, #ito-page .information-page .information-body .information-social__header .title p {
+  color: #232323;
+  font-weight: 700;
+  font-size: 16px;
+}
+#ito-page .information-page .information-body .information-personal__header .button-edit, #ito-page .information-page .information-body .information-social__header .button-edit {
+  border: 1px solid #F05A28;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+#ito-page .information-page .information-body .information-personal__header .button-edit .btn, #ito-page .information-page .information-body .information-social__header .button-edit .btn {
+  font-size: 16px;
+  color: #F05A28;
+  padding: 5px 25px;
+  font-weight: 600;
+}
+#ito-page .information-page .information-body .information-personal__body .avatar img, #ito-page .information-page .information-body .information-social__body .avatar img {
+  width: 80%;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .name-position p.name, #ito-page .information-page .information-body .information-social__body .information-personal__content .name-position p.name {
+  color: #F05A28;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .name-position span.position, #ito-page .information-page .information-body .information-social__body .information-personal__content .name-position span.position {
+  color: #696969;
+  font-size: 14px;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .table-information, #ito-page .information-page .information-body .information-social__body .information-personal__content .table-information {
+  padding-top: 24px;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .information-personal__body .information-personal__content .table-information table.table.table-striped tbody td, #ito-page .information-page .information-body .information-social__body .information-personal__content .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .information-social__body .information-personal__content .table-information table.table.table-striped tbody td {
+  border: 0;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .table-information table.table.table-striped tbody tr:nth-of-type(odd), #ito-page .information-page .information-body .information-social__body .information-personal__content .table-information table.table.table-striped tbody tr:nth-of-type(odd) {
+  background: rgba(240, 240, 240, 0.4);
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .information-social__body .information-personal__content .table-information table.table.table-striped tbody th {
+  font-size: 14px;
+  color: #696969;
+  font-weight: 400;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .table-information table.table.table-striped tbody td, #ito-page .information-page .information-body .information-social__body .information-personal__content .table-information table.table.table-striped tbody td {
+  color: #232323;
+}
+#ito-page .information-page .information-body .information-personal__body .information-social__content .table-information, #ito-page .information-page .information-body .information-social__body .information-social__content .table-information {
+  padding-top: 10px;
+}
+#ito-page .information-page .information-body .information-personal__body .information-social__content .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .information-personal__body .information-social__content .table-information table.table.table-striped tbody td, #ito-page .information-page .information-body .information-social__body .information-social__content .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .information-social__body .information-social__content .table-information table.table.table-striped tbody td {
+  border: 0;
+}
+#ito-page .information-page .information-body .information-personal__body .information-social__content .table-information table.table.table-striped tbody tr:nth-of-type(odd), #ito-page .information-page .information-body .information-social__body .information-social__content .table-information table.table.table-striped tbody tr:nth-of-type(odd) {
+  background: #F6FDFF;
+}
+#ito-page .information-page .information-body .information-personal__body .information-social__content .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .information-social__body .information-social__content .table-information table.table.table-striped tbody th {
+  font-size: 14px;
+  color: #696969;
+  font-weight: 400;
+}
+#ito-page .information-page .information-body .information-personal__body .information-social__content .table-information table.table.table-striped tbody td, #ito-page .information-page .information-body .information-social__body .information-social__content .table-information table.table.table-striped tbody td {
+  color: #232323;
+}
+#ito-page .information-page .information-body .information-personal__body .information-social__content .table-information table.table.table-striped tbody td button, #ito-page .information-page .information-body .information-social__body .information-social__content .table-information table.table.table-striped tbody td button {
+  background: transparent;
+  border: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
