@@ -91,6 +91,10 @@
   font-size: 16px;
   color: white;
   margin: 5px auto;
+  border-radius: 25px;
+}
+#ito-page section.ito-body .login-form-group__outline .form-right #form-login .form .cta-login button.btn:hover {
+  background-color: #cb491d;
 }
 #ito-page section.ito-body .login-form-group__outline .form-right #form-login .form .register-text {
   text-align: center;
@@ -165,6 +169,68 @@
     margin-top: 15px;
   }
 }
+#ito-page #menu-sidebar {
+  background-color: #1a75ba;
+  width: 280px;
+  padding: 20px 15px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1030;
+}
+#ito-page #menu-sidebar .logo-sidebar {
+  width: 100%;
+}
+#ito-page #menu-sidebar .menu-sidebar {
+  margin-top: 40px;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item a {
+  text-decoration: unset;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item a svg {
+  width: 25px;
+  margin-right: 13px;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item a svg img {
+  width: 100%;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item a .title {
+  color: white;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item.active, #ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item:hover {
+  background-color: #5196cc;
+}
+#ito-page #menu-sidebar .cta-logout {
+  margin: 150px auto auto;
+  background-color: #F05A28;
+  border-radius: 25px;
+  width: 80%;
+  text-align: center;
+}
+#ito-page #menu-sidebar .cta-logout a.btn {
+  font-size: 16px;
+  color: white;
+  margin: 5px auto;
+  padding: 12px;
+  border-radius: 25px;
+}
+#ito-page #menu-sidebar .cta-logout a.btn:hover {
+  background-color: #cb491d;
+}
+
 @font-face {
   font-family: "Noto Sans";
   src: url(../../fonts/Noto_Sans/NotoSans-Regular.ttf);
@@ -250,60 +316,6 @@
   margin: 5px auto;
 }
 
-#ito-page #menu-sidebar {
-  background-color: #1a75ba;
-  width: 280px;
-  padding: 20px 15px;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1030;
-}
-#ito-page #menu-sidebar .logo-sidebar {
-  width: 100%;
-}
-#ito-page #menu-sidebar .menu-sidebar {
-  margin-top: 40px;
-}
-#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-}
-#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item svg {
-  width: 25px;
-  margin-right: 13px;
-}
-#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item svg img {
-  width: 100%;
-}
-#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item .title {
-  color: white;
-}
-#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item.active {
-  background-color: #5196cc;
-}
-#ito-page #menu-sidebar .cta-logout {
-  margin: 150px auto auto;
-  background-color: #F05A28;
-  border-radius: 25px;
-  width: 80%;
-  text-align: center;
-}
-#ito-page #menu-sidebar .cta-logout a.btn {
-  font-size: 16px;
-  color: white;
-  margin: 5px auto;
-  padding: 12px;
-}
 #ito-page .information-page {
   padding-left: 280px;
   min-height: 100vh !important;
@@ -346,6 +358,11 @@
   color: #F05A28;
   padding: 5px 25px;
   font-weight: 600;
+  border-radius: 25px;
+}
+#ito-page .information-page .information-body .information-personal__header .button-edit .btn:hover, #ito-page .information-page .information-body .information-social__header .button-edit .btn:hover {
+  background-color: #F05A28;
+  color: white;
 }
 #ito-page .information-page .information-body .information-personal__body .avatar img, #ito-page .information-page .information-body .information-social__body .avatar img {
   width: 80%;
@@ -397,6 +414,186 @@
 #ito-page .information-page .information-body .information-personal__body .information-social__content .table-information table.table.table-striped tbody td button, #ito-page .information-page .information-body .information-social__body .information-social__content .table-information table.table.table-striped tbody td button {
   background: transparent;
   border: 0;
+}
+
+#ito-page .update-account-page {
+  padding-left: 280px;
+  min-height: 100vh !important;
+}
+#ito-page .update-account-page header.header {
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+}
+#ito-page .update-account-page .update-account-body {
+  padding: 24px 34px 24px 60px;
+}
+#ito-page .update-account-page .update-account-body__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #232323;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal {
+  padding: 4% 20%;
+  background: #FFFFFF;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__header .title p {
+  padding: 0 15px;
+  color: #232323;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__header .button-edit {
+  border: 1px solid #F05A28;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__header .button-edit .btn {
+  font-size: 16px;
+  color: #F05A28;
+  padding: 5px 25px;
+  font-weight: 600;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__body .form .form-group {
+  padding: 0 15px;
+  position: relative;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__body .form .form-group .custom-checkbox .custom-control-label {
+  color: #696969;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__body .form .form-group .btn-toggle-pwd {
+  position: absolute;
+  right: 25px;
+  top: 40px;
+  cursor: pointer;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__body .form .cta-edit.btn {
+  border: 1px solid #F05A28;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: #F05A28;
+  padding: 7px 30px;
+  margin-top: 40px;
+  font-weight: 600;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__body .form .cta-edit.btn:hover {
+  background-color: #F05A28;
+  color: white;
+}
+
+#ito-page .manage-social-page {
+  padding-left: 280px;
+  min-height: 100vh !important;
+}
+#ito-page .manage-social-page header.header {
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+}
+#ito-page .manage-social-page .manage-social-body {
+  padding: 24px 34px 24px 60px;
+}
+#ito-page .manage-social-page .manage-social-body__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #232323;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal {
+  padding: 4% 20%;
+  background: #FFFFFF;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__header .title a.tooltip-btn {
+  text-decoration: unset;
+  display: flex;
+  align-items: center;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__header .title a.tooltip-btn svg {
+  width: 24px;
+  height: 24px;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__header .title a.tooltip-btn p {
+  padding: 0 15px;
+  color: #232323;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__header .button-edit {
+  border: 1px solid #F05A28;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__header .button-edit .btn {
+  font-size: 16px;
+  color: #F05A28;
+  padding: 5px 25px;
+  font-weight: 600;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-group {
+  padding: 0 15px;
+  position: relative;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-group .custom-checkbox .custom-control-label {
+  color: #696969;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-group .btn-toggle-pwd {
+  position: absolute;
+  right: 25px;
+  top: 40px;
+  cursor: pointer;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .cta-edit.btn {
+  border: 1px solid #F05A28;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: #F05A28;
+  padding: 7px 30px;
+  margin-top: 40px;
+  font-weight: 600;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .cta-edit.btn:hover {
+  background-color: #F05A28;
+  color: white;
+}
+
+.tooltip {
+  width: 500px !important;
+}
+.tooltip.show {
+  opacity: 1 !important;
+}
+.tooltip .arrow:after, .tooltip .arrow:before {
+  display: none;
+}
+.tooltip .tooltip-inner {
+  background: #FFFFFF;
+  opacity: 1;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100% !important;
+  max-width: 500px !important;
+  text-align: left;
+  color: #696969;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,60 @@
+#ito-page #menu-sidebar {
+  background-color: #1a75ba;
+  width: 280px;
+  padding: 20px 15px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1030;
+}
+#ito-page #menu-sidebar .logo-sidebar {
+  width: 100%;
+}
+#ito-page #menu-sidebar .menu-sidebar {
+  margin-top: 40px;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item svg {
+  width: 25px;
+  margin-right: 13px;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item svg img {
+  width: 100%;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item .title {
+  color: white;
+}
+#ito-page #menu-sidebar .menu-sidebar ul.list-menu-item li.menu-item.active {
+  background-color: #5196cc;
+}
+#ito-page #menu-sidebar .cta-logout {
+  margin: 150px auto auto;
+  background-color: #F05A28;
+  border-radius: 25px;
+  width: 80%;
+  text-align: center;
+}
+#ito-page #menu-sidebar .cta-logout a.btn {
+  font-size: 16px;
+  color: white;
+  margin: 5px auto;
+  padding: 12px;
+  border-radius: 25px;
+}
+#ito-page #menu-sidebar .cta-logout a.btn:hover {
+  background-color: #cb491d;
+}
+
+/*# sourceMappingURL=menu-sidebar.css.map */

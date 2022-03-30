@@ -1,0 +1,134 @@
+#ito-page {
+  .manage-social-page {
+    padding-left: 280px;
+    min-height: 100vh !important;
+
+    header.header {
+      box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    .manage-social-body {
+      padding: 24px 34px 24px 60px;
+
+      &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #232323;
+      }
+
+      .manage-social-personal {
+        padding: 4% 20%;
+        background: #FFFFFF;
+        box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 24px;
+
+          .title {
+            a.tooltip-btn{
+              text-decoration: unset;
+              display: flex;
+              align-items: center;
+              svg{
+                width: 24px;
+                height: 24px;
+              }
+              p {
+                padding: 0 15px;
+                color: #232323;
+                font-weight: 700;
+                font-size: 16px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          .button-edit {
+            border: 1px solid #F05A28;
+            background-color: white;
+            border-radius: 25px;
+            text-align: center;
+
+            .btn {
+              font-size: 16px;
+              color: #F05A28;
+              padding: 5px 25px;
+              font-weight: 600;
+            }
+          }
+        }
+
+        &__body {
+          .form {
+            .form-group {
+              padding: 0 15px;
+              position: relative;
+
+              .custom-checkbox {
+                .custom-control-label {
+                  color: #696969;
+                }
+              }
+
+              .btn-toggle-pwd {
+                position: absolute;
+                right: 25px;
+                top: 40px;
+                cursor: pointer;
+
+                &:hover {
+
+                }
+              }
+            }
+
+            .cta-edit.btn {
+              border: 1px solid #F05A28;
+              background-color: white;
+              border-radius: 25px;
+              text-align: center;
+              font-size: 16px;
+              color: #F05A28;
+              padding: 7px 30px;
+              margin-top: 40px;
+              font-weight: 600;
+
+              &:hover {
+                background-color: #F05A28;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tooltip {
+  width: 500px !important;
+  &.show{
+    opacity: 1 !important;
+  }
+  .arrow {
+    &:after,&:before {
+      display: none;
+    }
+  }
+
+  .tooltip-inner {
+    background: #FFFFFF;
+    opacity: 1;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100% !important;
+    max-width: 500px !important;
+    text-align: left;
+    color: #696969;
+  }
+}

@@ -1,0 +1,51 @@
+#ito-page .update-account-page header.header {
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+}
+#ito-page .update-account-page .update-account-body {
+  padding: 24px 34px 24px 60px;
+}
+#ito-page .update-account-page .update-account-body__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #232323;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal, #ito-page .update-account-page .update-account-body .update-account-social {
+  padding: 20px 50px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__header, #ito-page .update-account-page .update-account-body .update-account-social__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__header .title p, #ito-page .update-account-page .update-account-body .update-account-social__header .title p {
+  color: #232323;
+  font-weight: 700;
+  font-size: 16px;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__header .button-edit, #ito-page .update-account-page .update-account-body .update-account-social__header .button-edit {
+  border: 1px solid #F05A28;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__header .button-edit .btn, #ito-page .update-account-page .update-account-body .update-account-social__header .button-edit .btn {
+  font-size: 16px;
+  color: #F05A28;
+  padding: 5px 25px;
+  font-weight: 600;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__body .update-account-personal__content .name-position p.name, #ito-page .update-account-page .update-account-body .update-account-social__body .update-account-personal__content .name-position p.name {
+  color: #F05A28;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+#ito-page .update-account-page .update-account-body .update-account-personal__body .update-account-personal__content .name-position span.position, #ito-page .update-account-page .update-account-body .update-account-social__body .update-account-personal__content .name-position span.position {
+  color: #696969;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=update-account.css.map */

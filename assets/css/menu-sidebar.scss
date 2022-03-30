@@ -1,0 +1,74 @@
+#ito-page {
+  #menu-sidebar {
+    background-color: #1a75ba;
+    width: 280px;
+    padding: 20px 15px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1030;
+
+    .logo-sidebar {
+      width: 100%;
+    }
+
+    .menu-sidebar {
+      margin-top: 40px;
+
+      ul.list-menu-item {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+
+        li.menu-item {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-bottom: 10px;
+
+          a{
+            text-decoration: unset;
+            svg {
+              width: 25px;
+              margin-right: 13px;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .title {
+              color: white;
+            }
+          }
+
+          &.active, &:hover {
+            background-color: #5196cc;
+          }
+        }
+      }
+    }
+
+    .cta-logout {
+      margin: 150px auto auto;
+      background-color: #F05A28;
+      border-radius: 25px;
+      width: 80%;
+      text-align: center;
+
+      a.btn {
+        font-size: 16px;
+        color: white;
+        margin: 5px auto;
+        padding: 12px;
+        border-radius: 25px;
+
+        &:hover {
+          background-color: #cb491d;
+        }
+      }
+    }
+  }
+}
