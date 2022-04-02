@@ -1,0 +1,129 @@
+#ito-page {
+
+  .manage-bank-page {
+    padding-left: 280px;
+    min-height: 100vh !important;
+
+
+    .manage-bank-body {
+      padding: 24px 34px 24px 60px;
+
+      &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #232323;
+      }
+
+      .manage-bank-personal, .manage-bank-social {
+        padding: 20px 50px;
+        background: #FFFFFF;
+        box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .title {
+            p {
+              color: #232323;
+              font-weight: 700;
+              font-size: 16px;
+            }
+          }
+
+          .button-edit {
+            border: 1px solid #F05A28;
+            background-color: white;
+            border-radius: 25px;
+            text-align: center;
+
+            .btn {
+              font-size: 16px;
+              color: #F05A28;
+              padding: 5px 25px;
+              font-weight: 600;
+              border-radius: 25px;
+
+              &:hover {
+                background-color: #F05A28;
+                color: white;
+              }
+            }
+          }
+        }
+
+        &__body {
+          .avatar {
+            img {
+              width: 80%;
+            }
+          }
+
+          .manage-bank-personal__content {
+            .name-position {
+              p.name {
+                color: #F05A28;
+                font-weight: 700;
+                font-size: 24px;
+                margin: 0;
+              }
+
+              span.position {
+                color: #696969;
+                font-size: 14px;
+              }
+            }
+
+            .table-manage-bank {
+              padding-top: 10px;
+
+              table.table.table-striped {
+                thead {
+                  background-color: #1A75BA;
+                  color: white;
+
+                  tr {
+                    th {
+                      vertical-align: middle;
+                      border: 0;
+
+                      &:first-child {
+                        border-radius: 7px 0 0 7px;
+                      }
+
+                      &:last-child {
+                        border-radius: 0 7px 7px 0;
+                      }
+                    }
+                  }
+                }
+
+                tbody {
+                  td {
+                    border: 0;
+                  }
+
+                  tr:nth-of-type(odd) {
+                    background: #F6FDFF;
+                  }
+
+                  td {
+                    color: #232323;
+                    vertical-align: middle;
+
+                    button {
+                      background: transparent;
+                      border: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

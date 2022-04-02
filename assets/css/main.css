@@ -620,4 +620,214 @@
   color: #696969;
 }
 
+#ito-page .manage-bank-page {
+  padding-left: 280px;
+  min-height: 100vh !important;
+}
+#ito-page .manage-bank-page .manage-bank-body {
+  padding: 24px 34px 24px 60px;
+}
+#ito-page .manage-bank-page .manage-bank-body__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #232323;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social {
+  padding: 20px 50px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__header, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__header .title p, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__header .title p {
+  color: #232323;
+  font-weight: 700;
+  font-size: 16px;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__header .button-edit, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__header .button-edit {
+  border: 1px solid #F05A28;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__header .button-edit .btn, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__header .button-edit .btn {
+  font-size: 16px;
+  color: #F05A28;
+  padding: 5px 25px;
+  font-weight: 600;
+  border-radius: 25px;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__header .button-edit .btn:hover, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__header .button-edit .btn:hover {
+  background-color: #F05A28;
+  color: white;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .avatar img, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .avatar img {
+  width: 80%;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .name-position p.name, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .name-position p.name {
+  color: #F05A28;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .name-position span.position, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .name-position span.position {
+  color: #696969;
+  font-size: 14px;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .table-manage-bank, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .table-manage-bank {
+  padding-top: 10px;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .table-manage-bank table.table.table-striped thead, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .table-manage-bank table.table.table-striped thead {
+  background-color: #1A75BA;
+  color: white;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .table-manage-bank table.table.table-striped thead tr th, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .table-manage-bank table.table.table-striped thead tr th {
+  vertical-align: middle;
+  border: 0;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .table-manage-bank table.table.table-striped thead tr th:first-child, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .table-manage-bank table.table.table-striped thead tr th:first-child {
+  border-radius: 7px 0 0 7px;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .table-manage-bank table.table.table-striped thead tr th:last-child, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .table-manage-bank table.table.table-striped thead tr th:last-child {
+  border-radius: 0 7px 7px 0;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .table-manage-bank table.table.table-striped tbody td, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .table-manage-bank table.table.table-striped tbody td {
+  border: 0;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .table-manage-bank table.table.table-striped tbody tr:nth-of-type(odd), #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .table-manage-bank table.table.table-striped tbody tr:nth-of-type(odd) {
+  background: #F6FDFF;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .table-manage-bank table.table.table-striped tbody td, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .table-manage-bank table.table.table-striped tbody td {
+  color: #232323;
+  vertical-align: middle;
+}
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .table-manage-bank table.table.table-striped tbody td button, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .table-manage-bank table.table.table-striped tbody td button {
+  background: transparent;
+  border: 0;
+}
+
+#ito-page .edit-information-page {
+  padding-left: 280px;
+  min-height: 100vh !important;
+}
+#ito-page .edit-information-page .edit-information-body {
+  padding: 24px 34px 24px 60px;
+}
+#ito-page .edit-information-page .edit-information-body__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #232323;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal {
+  background: #FFFFFF;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__header {
+  padding: 4% 20% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__header .title p {
+  padding: 0 15px;
+  color: #232323;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input {
+  padding: 0 20%;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group {
+  padding: 0 15px;
+  position: relative;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group .custom-checkbox .custom-control-label {
+  color: #696969;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group .form-check.radio-item {
+  padding: 0;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group .form-check.radio-item input[type=radio] {
+  display: none;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group .form-check.radio-item input[type=radio]:checked + label:before {
+  border-color: #F05A28;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group .form-check.radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  content: "";
+  display: block;
+  background: #F05A28;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group .form-check.radio-item label:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin: 0 5px 0 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 11px;
+  border: 2px solid #777;
+  background-color: transparent;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group .btn-plus {
+  position: absolute;
+  right: 15px;
+  top: 36px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group .input-group .input-group-prepend .input-group-text {
+  border-right: 0;
+  background: white;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group .input-group .form-control {
+  border-left: 0;
+  padding: 10px;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .edit-information-personal__body .form-input .form-group .input-group .btn-plus {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .form-button {
+  padding: 0 5%;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .form-button .btn {
+  border: 1px solid #F05A28;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: #F05A28;
+  padding: 7px 30px;
+  font-weight: 600;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .form-button .btn.cta-save {
+  color: #696969;
+  border: 0;
+  background: #F0F0F0;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal .form .form-button .btn:hover {
+  background-color: #F05A28;
+  color: white;
+}
+
 /*# sourceMappingURL=main.css.map */

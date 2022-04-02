@@ -1,0 +1,162 @@
+#ito-page {
+  .edit-information-page {
+    padding-left: 280px;
+    min-height: 100vh !important;
+
+    .edit-information-body {
+      padding: 24px 34px 24px 60px;
+
+      &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #232323;
+      }
+
+      .edit-information-personal {
+        background: #FFFFFF;
+        box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+
+        .form {
+          .edit-information-personal__header {
+            padding: 4% 20% 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .title {
+              p {
+                padding: 0 15px;
+                color: #232323;
+                font-weight: 700;
+                font-size: 16px;
+                margin-bottom: 24px;
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          .edit-information-personal__body {
+            .form-input {
+              padding: 0 20%;
+
+              .form-group {
+                padding: 0 15px;
+                position: relative;
+
+                .custom-checkbox {
+                  .custom-control-label {
+                    color: #696969;
+                  }
+                }
+
+                .form-check {
+                  &.radio-item {
+                    padding: 0;
+
+                    input[type=radio] {
+                      display: none;
+
+                      &:checked + label:before {
+                        border-color: #F05A28;
+                      }
+
+                      &:checked + label:after {
+                        border-radius: 11px;
+                        width: 10px;
+                        height: 10px;
+                        position: absolute;
+                        top: 7px;
+                        left: 4px;
+                        content: "";
+                        display: block;
+                        background: #F05A28;
+                      }
+                    }
+
+                    label {
+                      &:before {
+                        content: "";
+                        display: inline-block;
+                        position: relative;
+                        top: 3px;
+                        margin: 0 5px 0 0;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 11px;
+                        border: 2px solid #777;
+                        background-color: transparent;
+                      }
+                    }
+                  }
+                }
+
+                .btn-plus {
+                  position: absolute;
+                  right: 15px;
+                  top: 36px;
+                  cursor: pointer;
+                  border: 0;
+                  background: transparent;
+                }
+
+                .input-group {
+                  .input-group-prepend {
+                    .input-group-text {
+                      border-right: 0;
+                      background: white
+                    }
+                  }
+
+                  .form-control {
+                    border-left: 0;
+                    padding: 10px;
+                  }
+
+                  .btn-plus {
+                    position: absolute;
+                    right: 0;
+                    top: 4px;
+                    cursor: pointer;
+                    border: 0;
+                    background: transparent;
+                  }
+                }
+              }
+            }
+          }
+
+          .form-button {
+            padding: 0 5%;
+
+            .btn {
+              border: 1px solid #F05A28;
+              background-color: white;
+              border-radius: 25px;
+              text-align: center;
+              font-size: 16px;
+              color: #F05A28;
+              padding: 7px 30px;
+              font-weight: 600;
+
+              &.cta-cancel {
+              }
+
+              &.cta-save {
+                color: #696969;
+                border: 0;
+                background: #F0F0F0;
+              }
+
+
+              &:hover {
+                background-color: #F05A28;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

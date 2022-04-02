@@ -1,0 +1,106 @@
+#ito-page .edit-information-page {
+  padding-left: 280px;
+  min-height: 100vh !important;
+}
+#ito-page .edit-information-page .edit-information-body {
+  padding: 24px 34px 24px 60px;
+}
+#ito-page .edit-information-page .edit-information-body__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #232323;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal {
+  padding: 4% 20%;
+  background: #FFFFFF;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4% 20% 0;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__header .title a.tooltip-btn {
+  text-decoration: unset;
+  display: flex;
+  align-items: center;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__header .title a.tooltip-btn svg {
+  width: 24px;
+  height: 24px;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__header .title a.tooltip-btn p {
+  padding: 0 15px;
+  color: #232323;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__header .button-edit {
+  border: 1px solid #F05A28;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__header .button-edit .btn {
+  font-size: 16px;
+  color: #F05A28;
+  padding: 5px 25px;
+  font-weight: 600;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__body .form .form-input {
+  padding: 4% 20%;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__body .form .form-input .form-group {
+  padding: 0 15px;
+  position: relative;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__body .form .form-input .form-group label {
+  font-weight: 600;
+  font-size: 14px;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__body .form .form-input .form-group .input-group .input-group-prepend .input-group-text {
+  padding: 10px;
+  border-right: 0;
+  background: white;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__body .form .form-input .form-group .input-group .form-control {
+  border-left: 0;
+  padding: 10px;
+  height: auto;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__body .form .form-input .form-group .input-group .btn-plus {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__body .form .form-button {
+  padding: 0 5%;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__body .form .form-button .btn {
+  border: 1px solid #F05A28;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: #F05A28;
+  padding: 7px 30px;
+  font-weight: 600;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__body .form .form-button .btn.cta-save {
+  color: #696969;
+  border: 0;
+  background: #F0F0F0;
+}
+#ito-page .edit-information-page .edit-information-body .edit-information-personal__body .form .form-button .btn:hover {
+  background-color: #F05A28;
+  color: white;
+}
+
+/*# sourceMappingURL=edit-information.css.map */
