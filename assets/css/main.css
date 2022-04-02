@@ -25,16 +25,16 @@
   padding-bottom: 120px;
   position: relative;
 }
-#ito-page section.ito-body:after {
-  content: "";
+#ito-page section.ito-body .bg-left {
   background: url("../../images/bg-left-bottom.png") no-repeat bottom left;
   position: absolute;
   width: 100%;
   height: 442px;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
-#ito-page section.ito-body:before {
+#ito-page section.ito-body .bg-right {
   content: "";
   background: url("../../images/bg-right-top.png") no-repeat top right;
   position: absolute;
@@ -42,6 +42,11 @@
   height: 400px;
   top: -60px;
   right: 0;
+  z-index: 1;
+}
+#ito-page section.ito-body .login-form-group {
+  z-index: 2;
+  position: relative;
 }
 #ito-page section.ito-body .login-form-group__outline {
   border-radius: 15px;
@@ -57,6 +62,7 @@
 }
 #ito-page section.ito-body .login-form-group__outline .form-right #form-login {
   padding: 110px;
+  background-color: white;
 }
 #ito-page section.ito-body .login-form-group__outline .form-right #form-login .form-login_title {
   text-align: center;
