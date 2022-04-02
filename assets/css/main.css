@@ -214,7 +214,7 @@
   background-color: #5196cc;
 }
 #ito-page #menu-sidebar .cta-logout {
-  margin: 150px auto auto;
+  margin: 100px auto auto;
   background-color: #F05A28;
   border-radius: 25px;
   width: 80%;
@@ -322,6 +322,10 @@
 }
 #ito-page .information-page header.header {
   box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+}
+#ito-page .information-page header.header .navbar__items-right a#profile {
+  text-decoration: unset;
+  color: #4C4C4C;
 }
 #ito-page .information-page .information-body {
   padding: 24px 34px 24px 60px;
@@ -507,7 +511,6 @@
   color: #232323;
 }
 #ito-page .manage-social-page .manage-social-body .manage-social-personal {
-  padding: 4% 20%;
   background: #FFFFFF;
   box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
@@ -516,7 +519,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  padding: 4% 20% 0;
 }
 #ito-page .manage-social-page .manage-social-body .manage-social-personal__header .title a.tooltip-btn {
   text-decoration: unset;
@@ -547,20 +550,39 @@
   padding: 5px 25px;
   font-weight: 600;
 }
-#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-group {
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-input {
+  padding: 4% 20%;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-input .form-group {
   padding: 0 15px;
   position: relative;
 }
-#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-group .custom-checkbox .custom-control-label {
-  color: #696969;
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-input .form-group label {
+  font-weight: 600;
+  font-size: 14px;
 }
-#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-group .btn-toggle-pwd {
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-input .form-group .input-group .input-group-prepend .input-group-text {
+  padding: 10px;
+  border-right: 0;
+  background: white;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-input .form-group .input-group .form-control {
+  border-left: 0;
+  padding: 10px;
+  height: auto;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-input .form-group .input-group .btn-plus {
   position: absolute;
-  right: 25px;
-  top: 40px;
+  right: 8px;
+  top: 8px;
   cursor: pointer;
+  border: 0;
+  background: transparent;
 }
-#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .cta-edit.btn {
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-button {
+  padding: 0 5%;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-button .btn {
   border: 1px solid #F05A28;
   background-color: white;
   border-radius: 25px;
@@ -568,10 +590,14 @@
   font-size: 16px;
   color: #F05A28;
   padding: 7px 30px;
-  margin-top: 40px;
   font-weight: 600;
 }
-#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .cta-edit.btn:hover {
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-button .btn.cta-save {
+  color: #696969;
+  border: 0;
+  background: #F0F0F0;
+}
+#ito-page .manage-social-page .manage-social-body .manage-social-personal__body .form .form-button .btn:hover {
   background-color: #F05A28;
   color: white;
 }

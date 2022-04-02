@@ -6,6 +6,15 @@
 
     header.header {
       box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+
+      .navbar {
+        &__items-right {
+          a#profile {
+            text-decoration: unset;
+            color: #4C4C4C;
+          }
+        }
+      }
     }
 
     .information-body {
