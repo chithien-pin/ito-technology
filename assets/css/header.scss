@@ -1,0 +1,21 @@
+#ito-page {
+  header.header {
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    .navbar {
+      &__items-right {
+        a#profile {
+          color: #4C4C4C;
+        }
+        .dropdown-toggle {
+          color: #4C4C4C;
+          font-weight: 500;
+
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}

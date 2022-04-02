@@ -12,23 +12,6 @@
   background-color: #f6fdff;
   font-family: "Noto Sans";
 
-  header.header {
-    background-color: white;
-
-    .navbar {
-      &__items-right {
-        .dropdown-toggle {
-          color: #4C4C4C;
-          font-weight: 500;
-
-          &:after {
-            content: none;
-          }
-        }
-      }
-    }
-  }
-
   section.ito-body {
     margin-top: 60px;
     padding-bottom: 120px;
