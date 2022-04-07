@@ -1101,16 +1101,12 @@
 #ito-page .information-page .information-body .information-personal__body .information-personal__content .list-social {
   margin-top: 24px;
 }
-#ito-page .information-page .information-body .information-personal__body .information-personal__content .list-social .social-item {
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .list-social .social-item:not(:last-child) {
   margin-right: 24px;
 }
 #ito-page .information-page .information-body .information-personal__body .information-personal__content .list-social .social-item svg {
   width: 32px;
   height: auto;
-}
-#ito-page .information-page .information-body .information-personal__body .information-personal__content hr {
-  margin: 0 0 1rem;
-  border-top: 2px solid #F0F0F0;
 }
 #ito-page .information-page .information-body .information-personal__body .information-personal__content .button .btn.btn-save {
   background-color: #F05A28;
@@ -1322,10 +1318,10 @@
 }
 #ito-page .information-page .information-body .block-quote {
   min-height: 240px;
-  background: radial-gradient(50.37% 325.15% at 9.29% 11.27%, rgba(0, 0, 0, 0.2) 46.91%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/bg-tree.png);
+  background: url("../../images/bg-blue-end-page.png") no-repeat center;
   background-size: cover;
   border-radius: 16px;
-  padding: 2% 10% 5%;
+  padding: 2% 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1334,13 +1330,13 @@
 #ito-page .information-page .information-body .block-quote p.heading {
   font-weight: 700;
   font-size: 32px;
-  color: #FFFFFF;
+  color: #F05A28;
   text-align: center;
 }
 #ito-page .information-page .information-body .block-quote p.quote {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #232323;
   position: relative;
   text-align: center;
 }
@@ -1365,6 +1361,46 @@
   position: absolute;
   bottom: -10px;
   right: 0;
+}
+#ito-page .share-link-02 .information-personal {
+  padding: 20px 0;
+  box-shadow: unset;
+  border-radius: 16px;
+}
+#ito-page .share-link-02 .information-personal__header .title p {
+  font-weight: 700;
+  font-size: 24px;
+}
+#ito-page .share-link-02 .information-personal__body .row {
+  max-width: 500px;
+}
+#ito-page .share-link-02 .information-personal__body .row .avatar img {
+  width: 90%;
+}
+#ito-page .share-link-02 .information-personal__body .row .information-personal__content .list-social {
+  margin-top: 24px;
+}
+#ito-page .share-link-02 .information-personal__body .row .information-personal__content .list-social .social-item:not(:last-child) {
+  margin-right: 24px;
+}
+#ito-page .share-link-02 .information-personal__body .row .information-personal__content .list-social .social-item svg {
+  width: 32px;
+  height: auto;
+}
+#ito-page .share-link-02 .information-personal__body .row .information-personal__content .table-information .table th, #ito-page .share-link-02 .information-personal__body .row .information-personal__content .table-information .table td {
+  border: 0;
+}
+#ito-page .share-link-02 .information-personal__body .row .information-personal__content .button .btn.btn-save {
+  background-color: #F05A28;
+  border-radius: 30px;
+  color: #FFFFFF;
+  padding: 7px 30px;
+}
+#ito-page .share-link-02 .information-personal__body .row .information-personal__content .button .btn.btn-save:hover {
+  background: #FFFFFF;
+  color: #F05A28;
+  font-weight: 700;
+  border: 1px solid #F05A28;
 }
 
 /*# sourceMappingURL=main.css.map */

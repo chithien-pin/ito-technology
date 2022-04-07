@@ -1,0 +1,292 @@
+#ito-page {
+  background: #FFFFFF;
+}
+#ito-page .information-page {
+  padding-left: 0;
+  min-height: 100vh !important;
+}
+#ito-page .information-page .information-body {
+  padding: 30px 0;
+}
+#ito-page .information-page .information-body .information-personal {
+  padding: 20px 0;
+  box-shadow: unset;
+  border-radius: 16px;
+}
+#ito-page .information-page .information-body .information-personal__header .title p {
+  font-weight: 700;
+  font-size: 24px;
+}
+#ito-page .information-page .information-body .information-personal__body .avatar img {
+  width: 90%;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .list-social {
+  margin-top: 24px;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .list-social .social-item {
+  margin-right: 24px;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .list-social .social-item svg {
+  width: 32px;
+  height: auto;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content hr {
+  margin: 0 0 1rem;
+  border-top: 2px solid #F0F0F0;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .button .btn.btn-save {
+  background-color: #F05A28;
+  border-radius: 30px;
+  color: #FFFFFF;
+  padding: 7px 30px;
+}
+#ito-page .information-page .information-body .information-personal__body .information-personal__content .button .btn.btn-save:hover {
+  background: #FFFFFF;
+  color: #F05A28;
+  font-weight: 700;
+  border: 1px solid #F05A28;
+}
+#ito-page .information-page .information-body .block-experience, #ito-page .information-page .information-body .block-education {
+  background: url("../../images/bg-experience.png") no-repeat center;
+  background-size: cover;
+  min-height: 320px;
+  padding: 24px 0;
+}
+#ito-page .information-page .information-body .block-experience .experience-title p, #ito-page .information-page .information-body .block-education .experience-title p {
+  font-weight: 700;
+  font-size: 24px;
+}
+#ito-page .information-page .information-body .block-experience .experience-timeline .experience-timeline-item, #ito-page .information-page .information-body .block-education .experience-timeline .experience-timeline-item {
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+#ito-page .information-page .information-body .block-experience .experience-timeline .experience-timeline-item:not(:first-child):before, #ito-page .information-page .information-body .block-education .experience-timeline .experience-timeline-item:not(:first-child):before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  left: 15px;
+  top: -100%;
+  background: linear-gradient(150.95deg, #72D3FF -4.34%, #137AC2 103.83%);
+  position: absolute;
+  z-index: 2;
+}
+#ito-page .information-page .information-body .block-experience .experience-timeline .experience-timeline-item .position, #ito-page .information-page .information-body .block-education .experience-timeline .experience-timeline-item .position {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #F05A28;
+  margin-bottom: 1rem;
+  position: relative;
+}
+#ito-page .information-page .information-body .block-experience .experience-timeline .experience-timeline-item .position:after, #ito-page .information-page .information-body .block-education .experience-timeline .experience-timeline-item .position:after {
+  content: "";
+  background: url("../../images/circle.svg") no-repeat center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  left: -33px;
+  top: 1px;
+  z-index: 3;
+  position: absolute;
+}
+#ito-page .information-page .information-body .block-experience .experience-timeline .experience-timeline-item .company, #ito-page .information-page .information-body .block-education .experience-timeline .experience-timeline-item .company {
+  font-size: 16px;
+  color: #232323;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#ito-page .information-page .information-body .block-experience .experience-timeline .experience-timeline-item .time, #ito-page .information-page .information-body .block-education .experience-timeline .experience-timeline-item .time {
+  color: #696969;
+  font-size: 14px;
+}
+#ito-page .information-page .information-body .block-education {
+  background: unset;
+}
+#ito-page .information-page .information-body .block-education .video {
+  background-color: #F0F0F0;
+  padding: 10px 10px 5px;
+  border-radius: 8px;
+}
+#ito-page .information-page .information-body .block-education .video iframe {
+  border-radius: 4px;
+}
+#ito-page .information-page .information-body .block-education .content {
+  margin-top: 20px;
+}
+#ito-page .information-page .information-body .block-education .content p {
+  font-size: 14px;
+  color: #696969;
+}
+#ito-page .information-page .information-body .block-education .education {
+  padding-left: 40px;
+}
+#ito-page .information-page .information-body .block-my-profile {
+  background: linear-gradient(165.39deg, rgba(114, 211, 255, 0.096) -3.41%, rgba(255, 255, 255, 0) 68.69%);
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile-title, #ito-page .information-page .information-body .block-my-profile .intro-bussiness-title, #ito-page .information-page .information-body .block-my-profile .gains-title, #ito-page .information-page .information-body .block-my-profile .top-profile-title {
+  padding-top: 30px;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile-title p, #ito-page .information-page .information-body .block-my-profile .intro-bussiness-title p, #ito-page .information-page .information-body .block-my-profile .gains-title p, #ito-page .information-page .information-body .block-my-profile .top-profile-title p {
+  font-weight: 700;
+  font-size: 24px;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .table-information, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .table-information, #ito-page .information-page .information-body .block-my-profile .gains .table-information, #ito-page .information-page .information-body .block-my-profile .top-profile .table-information {
+  padding-top: 24px;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .block-my-profile .my-profile .table-information table.table.table-striped tbody td, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .table-information table.table.table-striped tbody td, #ito-page .information-page .information-body .block-my-profile .gains .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .block-my-profile .gains .table-information table.table.table-striped tbody td, #ito-page .information-page .information-body .block-my-profile .top-profile .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .block-my-profile .top-profile .table-information table.table.table-striped tbody td {
+  border: 0;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .table-information table.table.table-striped tbody tr, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .table-information table.table.table-striped tbody tr, #ito-page .information-page .information-body .block-my-profile .gains .table-information table.table.table-striped tbody tr, #ito-page .information-page .information-body .block-my-profile .top-profile .table-information table.table.table-striped tbody tr {
+  border-radius: 4px;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .table-information table.table.table-striped tbody tr:nth-of-type(odd), #ito-page .information-page .information-body .block-my-profile .intro-bussiness .table-information table.table.table-striped tbody tr:nth-of-type(odd), #ito-page .information-page .information-body .block-my-profile .gains .table-information table.table.table-striped tbody tr:nth-of-type(odd), #ito-page .information-page .information-body .block-my-profile .top-profile .table-information table.table.table-striped tbody tr:nth-of-type(odd) {
+  background: linear-gradient(150.95deg, rgba(114, 211, 255, 0.08) -4.34%, rgba(19, 122, 194, 0.08) 103.83%);
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .block-my-profile .gains .table-information table.table.table-striped tbody th, #ito-page .information-page .information-body .block-my-profile .top-profile .table-information table.table.table-striped tbody th {
+  font-size: 16px;
+  color: #696969;
+  font-weight: 400;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .table-information table.table.table-striped tbody td, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .table-information table.table.table-striped tbody td, #ito-page .information-page .information-body .block-my-profile .gains .table-information table.table.table-striped tbody td, #ito-page .information-page .information-body .block-my-profile .top-profile .table-information table.table.table-striped tbody td {
+  color: #232323;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .table-information table.table.table-striped tbody td ul, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .table-information table.table.table-striped tbody td ul, #ito-page .information-page .information-body .block-my-profile .gains .table-information table.table.table-striped tbody td ul, #ito-page .information-page .information-body .block-my-profile .top-profile .table-information table.table.table-striped tbody td ul {
+  padding-left: 20px;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .table-information table.table.table-striped tbody td button, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .table-information table.table.table-striped tbody td button, #ito-page .information-page .information-body .block-my-profile .gains .table-information table.table.table-striped tbody td button, #ito-page .information-page .information-body .block-my-profile .top-profile .table-information table.table.table-striped tbody td button {
+  background: transparent;
+  border: 0;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .introduce, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .introduce, #ito-page .information-page .information-body .block-my-profile .gains .introduce, #ito-page .information-page .information-body .block-my-profile .top-profile .introduce {
+  width: 93%;
+  margin: 30px auto 0;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .introduce .video, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .introduce .video, #ito-page .information-page .information-body .block-my-profile .gains .introduce .video, #ito-page .information-page .information-body .block-my-profile .top-profile .introduce .video {
+  background-color: #F0F0F0;
+  padding: 10px 10px 5px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .introduce .video iframe, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .introduce .video iframe, #ito-page .information-page .information-body .block-my-profile .gains .introduce .video iframe, #ito-page .information-page .information-body .block-my-profile .top-profile .introduce .video iframe {
+  width: 100%;
+  height: 600px;
+  border-radius: 4px;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .introduce .introduce-content .content-item .title p, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .introduce .introduce-content .content-item .title p, #ito-page .information-page .information-body .block-my-profile .gains .introduce .introduce-content .content-item .title p, #ito-page .information-page .information-body .block-my-profile .top-profile .introduce .introduce-content .content-item .title p {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #F05A28;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .introduce .introduce-content .content-item .content p, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .introduce .introduce-content .content-item .content p, #ito-page .information-page .information-body .block-my-profile .gains .introduce .introduce-content .content-item .content p, #ito-page .information-page .information-body .block-my-profile .top-profile .introduce .introduce-content .content-item .content p {
+  font-size: 16px;
+  color: #232323;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .gains-content-1, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .gains-content-1, #ito-page .information-page .information-body .block-my-profile .gains .gains-content-1, #ito-page .information-page .information-body .block-my-profile .top-profile .gains-content-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .gains-content-1 .gains-item, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .gains-content-1 .gains-item, #ito-page .information-page .information-body .block-my-profile .gains .gains-content-1 .gains-item, #ito-page .information-page .information-body .block-my-profile .top-profile .gains-content-1 .gains-item {
+  width: calc(33.3333333333% - 20px);
+  height: 500px;
+  background: #FFFFFF;
+  box-shadow: 2px 6px 41px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 35px;
+  text-align: center;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .gains-content-1 .gains-item .title, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .gains-content-1 .gains-item .title, #ito-page .information-page .information-body .block-my-profile .gains .gains-content-1 .gains-item .title, #ito-page .information-page .information-body .block-my-profile .top-profile .gains-content-1 .gains-item .title {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #F05A28;
+  margin: 23px 0;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .gains-content-1 .gains-item .content, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .gains-content-1 .gains-item .content, #ito-page .information-page .information-body .block-my-profile .gains .gains-content-1 .gains-item .content, #ito-page .information-page .information-body .block-my-profile .top-profile .gains-content-1 .gains-item .content {
+  color: #232323;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .gains-content-2, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .gains-content-2, #ito-page .information-page .information-body .block-my-profile .gains .gains-content-2, #ito-page .information-page .information-body .block-my-profile .top-profile .gains-content-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .gains-content-2 .gains-item, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .gains-content-2 .gains-item, #ito-page .information-page .information-body .block-my-profile .gains .gains-content-2 .gains-item, #ito-page .information-page .information-body .block-my-profile .top-profile .gains-content-2 .gains-item {
+  width: calc(50% - 15px);
+  height: 355px;
+  background: #FFFFFF;
+  box-shadow: 2px 6px 41px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 35px;
+  text-align: left;
+  display: flex;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .gains-content-2 .gains-item .icon, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .gains-content-2 .gains-item .icon, #ito-page .information-page .information-body .block-my-profile .gains .gains-content-2 .gains-item .icon, #ito-page .information-page .information-body .block-my-profile .top-profile .gains-content-2 .gains-item .icon {
+  text-align: center;
+  margin: auto 0;
+  width: 35%;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .gains-content-2 .gains-item .icon p, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .gains-content-2 .gains-item .icon p, #ito-page .information-page .information-body .block-my-profile .gains .gains-content-2 .gains-item .icon p, #ito-page .information-page .information-body .block-my-profile .top-profile .gains-content-2 .gains-item .icon p {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #F05A28;
+  margin: 23px 0;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .gains-content-2 .gains-item .content, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .gains-content-2 .gains-item .content, #ito-page .information-page .information-body .block-my-profile .gains .gains-content-2 .gains-item .content, #ito-page .information-page .information-body .block-my-profile .top-profile .gains-content-2 .gains-item .content {
+  margin: auto 0;
+  padding-left: 30px;
+}
+#ito-page .information-page .information-body .block-my-profile .my-profile .gains-content-2 .gains-item .content ul, #ito-page .information-page .information-body .block-my-profile .intro-bussiness .gains-content-2 .gains-item .content ul, #ito-page .information-page .information-body .block-my-profile .gains .gains-content-2 .gains-item .content ul, #ito-page .information-page .information-body .block-my-profile .top-profile .gains-content-2 .gains-item .content ul {
+  line-height: 2.5;
+}
+#ito-page .information-page .information-body .block-quote {
+  min-height: 240px;
+  background: radial-gradient(50.37% 325.15% at 9.29% 11.27%, rgba(0, 0, 0, 0.2) 46.91%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/bg-tree.png);
+  background-size: cover;
+  border-radius: 16px;
+  padding: 2% 10% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+#ito-page .information-page .information-body .block-quote p.heading {
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-align: center;
+}
+#ito-page .information-page .information-body .block-quote p.quote {
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+  position: relative;
+  text-align: center;
+}
+#ito-page .information-page .information-body .block-quote p.quote:after {
+  content: "";
+  background: url("../../images/quote-left.svg") no-repeat center;
+  background-size: contain;
+  color: #F05A28;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+}
+#ito-page .information-page .information-body .block-quote p.quote:before {
+  content: "";
+  background: url("../../images/quote-right.svg") no-repeat center;
+  background-size: contain;
+  color: #F05A28;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+}
+
+/*# sourceMappingURL=share-link.css.map */
