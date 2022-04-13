@@ -6,10 +6,20 @@
     box-shadow: 0 1px 9px rgba(0, 0, 0, 0.1);
     background-color: white;
     .navbar {
+      justify-content: space-between;
+
+      &__items-mobile, button.navbar-toggler, .collapse.navbar-collapse {
+        display: none;
+      }
+
+
       &__items-right {
+        display: flex;
+
         a#profile {
           color: #4C4C4C;
         }
+
         .dropdown-toggle {
           color: #4C4C4C;
           font-weight: 500;
@@ -20,5 +30,176 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #ito-page {
+    header.header {
+      .navbar {
+        justify-content: center;
+
+        .navbar-brand {
+          margin: 0;
+        }
+
+        &__items-right {
+          display: none;
+        }
+
+        button.navbar-toggler {
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding: 0.75rem;
+          border-color: transparent;
+          display: block;
+        }
+
+        &__items-mobile {
+          &.show {
+            display: block;
+            position: absolute;
+            width: 80%;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            background: #1A75BA;
+            box-shadow: 7px 0 18px rgba(0, 0, 0, 0.1);
+            border-radius: 0 8px 0 0;
+            animation: slideShow 0.35s ease;
+            padding: 0 15px;
+          }
+
+          .menu-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+            position: relative;
+
+            .btn-close {
+              background-color: transparent;
+              border: 0;
+              padding: 0;
+
+              svg {
+                height: 30px;
+                width: 30px;
+              }
+            }
+
+            .dropdown-buttons {
+              display: flex;
+
+              .dropdown-toggle {
+                color: #FFF;
+                font-weight: 500;
+
+                &:after {
+                  content: none;
+                }
+
+                svg {
+                  path {
+                    fill: #FFFFFF;
+                  }
+                }
+              }
+            }
+
+            &:after {
+              content: "";
+              width: 100%;
+              height: 2px;
+              border-top: 2px solid #FFF;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          .list-menu{
+            margin-top: 15px;
+            ul.menu-item {
+              list-style: none;
+              padding: 0;
+              width: 100%;
+
+              li.menu-item {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-bottom: 10px;
+
+                a{
+                  text-decoration: unset;
+                  svg {
+                    width: 25px;
+                    margin-right: 13px;
+
+                    img {
+                      width: 100%;
+                    }
+                  }
+
+                  .title {
+                    color: white;
+                  }
+                }
+
+                &.active, &:hover {
+                  background-color: #5196cc;
+                }
+              }
+            }
+          }
+
+          .cta-logout{
+            background-color: #F05A28;
+            margin: auto;
+            border-radius: 25px;
+            padding: 5px;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            a.btn{
+              font-size: 16px;
+              color: white;
+              margin: auto;
+              border-radius: 25px;
+              &:hover{
+                background-color: #cb491d;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideShow {
+  0% {
+    left: -80%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideHide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -80%;
   }
 }
