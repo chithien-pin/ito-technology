@@ -47,7 +47,7 @@
   border: 1px solid #F05A28;
 }
 #ito-page .information-page .information-body .block-experience, #ito-page .information-page .information-body .block-education {
-  background: url("../../images/bg-experience.png") no-repeat center;
+  background: url("../images/bg-experience.png") no-repeat center;
   background-size: cover;
   min-height: 320px;
   padding: 24px 0;
@@ -81,7 +81,7 @@
 }
 #ito-page .information-page .information-body .block-experience .experience-timeline .experience-timeline-item .position:after, #ito-page .information-page .information-body .block-education .experience-timeline .experience-timeline-item .position:after {
   content: "";
-  background: url("../../images/circle.svg") no-repeat center;
+  background: url("../images/circle.svg") no-repeat center;
   background-size: cover;
   width: 20px;
   height: 20px;
@@ -244,7 +244,7 @@
 }
 #ito-page .information-page .information-body .block-quote {
   min-height: 240px;
-  background: radial-gradient(50.37% 325.15% at 9.29% 11.27%, rgba(0, 0, 0, 0.2) 46.91%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/bg-tree.png);
+  background: radial-gradient(50.37% 325.15% at 9.29% 11.27%, rgba(0, 0, 0, 0.2) 46.91%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/bg-tree.png);
   background-size: cover;
   border-radius: 16px;
   padding: 2% 10% 5%;
@@ -268,7 +268,7 @@
 }
 #ito-page .information-page .information-body .block-quote p.quote:after {
   content: "";
-  background: url("../../images/quote-left.svg") no-repeat center;
+  background: url("../images/quote-left.svg") no-repeat center;
   background-size: contain;
   color: #F05A28;
   height: 25px;
@@ -279,7 +279,7 @@
 }
 #ito-page .information-page .information-body .block-quote p.quote:before {
   content: "";
-  background: url("../../images/quote-right.svg") no-repeat center;
+  background: url("../images/quote-right.svg") no-repeat center;
   background-size: contain;
   color: #F05A28;
   height: 25px;

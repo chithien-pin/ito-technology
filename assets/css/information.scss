@@ -14,7 +14,7 @@
         color: #232323;
       }
 
-      .information-personal {
+      .information-personal, .information-social {
         padding: 20px 50px;
         background: #FFFFFF;
         box-shadow: 0 1px 16px rgba(0, 0, 0, 0.08);
@@ -60,7 +60,7 @@
             }
           }
 
-          .information-personal__content {
+          .information-personal__content, .information-social__content {
             .name-position {
               p.name {
                 color: #F05A28;
@@ -81,6 +81,14 @@
                 tbody {
                   th, td {
                     border: 0;
+                    vertical-align: middle;
+                    p{
+                      -webkit-line-clamp: 1;
+                      -webkit-box-orient: vertical;
+                      display: -webkit-box;
+                      overflow: hidden;
+                      margin: 0;
+                    }
                   }
 
                   tr:nth-of-type(odd) {
