@@ -1259,6 +1259,9 @@
   #ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .desktop {
     display: none;
   }
+  #ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .table-mange-bank.mobile {
+    display: block;
+  }
   #ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .table-mange-bank.mobile .tables .table-item {
     padding: 7px 15px;
     border-radius: 8px;
