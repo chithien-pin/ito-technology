@@ -165,3 +165,197 @@
     color: #696969;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  #ito-page {
+    #menu-sidebar {
+      width: 250px;
+
+      ul.list-menu-item li.menu-item {
+        font-size: 14px;
+      }
+    }
+
+    .manage-social-page {
+      padding-left: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ito-page {
+    #menu-sidebar {
+      display: none;
+    }
+
+    .manage-social-page {
+      padding-left: 0;
+
+      .manage-social-body {
+        padding: 20px;
+
+        .manage-social-personal {
+          padding: 10px;
+
+          &__header {
+            padding: 10px 20px;
+          }
+          &__body {
+            .form {
+              .form-input {
+                padding: 20px
+              }
+            }
+          }
+        }
+      }
+    }
+
+    header.header {
+      .navbar {
+        button.navbar-toggler {
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding: 0.75rem;
+          border-color: transparent;
+          display: block;
+        }
+
+        &-brand {
+          padding-left: 50px;
+        }
+
+        &__items-mobile {
+          &.show {
+            display: block;
+            position: fixed;
+            width: 80%;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            background: #1A75BA;
+            box-shadow: 7px 0 18px rgba(0, 0, 0, 0.1);
+            border-radius: 0 8px 0 0;
+            animation: slideShow 0.35s ease;
+            padding: 0 15px;
+          }
+
+          .menu-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+            position: relative;
+
+            .btn-close {
+              background-color: transparent;
+              border: 0;
+              padding: 0;
+
+              svg {
+                height: 30px;
+                width: 30px;
+              }
+            }
+
+            .dropdown-buttons {
+              display: flex;
+
+              .dropdown-toggle {
+                color: #FFF;
+                font-weight: 500;
+
+                &:after {
+                  content: none;
+                }
+
+                svg {
+                  path {
+                    fill: #FFFFFF;
+                  }
+                }
+              }
+            }
+
+            &:after {
+              content: "";
+              width: 100%;
+              height: 2px;
+              border-top: 2px solid #FFF;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          .list-menu {
+            margin-top: 15px;
+
+            ul.menu-item {
+              list-style: none;
+              padding: 0;
+              width: 100%;
+
+              li.menu-item {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-bottom: 10px;
+
+                a {
+                  text-decoration: unset;
+
+                  svg {
+                    width: 25px;
+                    margin-right: 13px;
+
+                    img {
+                      width: 100%;
+                    }
+                  }
+
+                  .title {
+                    color: white;
+                  }
+                }
+
+                &.active, &:hover {
+                  background-color: #5196cc;
+                }
+              }
+            }
+          }
+
+          .cta-logout {
+            background-color: #F05A28;
+            margin: auto;
+            border-radius: 25px;
+            padding: 5px;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+
+            a.btn {
+              font-size: 16px;
+              color: white;
+              margin: auto;
+              border-radius: 25px;
+
+              &:hover {
+                background-color: #cb491d;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

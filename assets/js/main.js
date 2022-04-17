@@ -46,3 +46,24 @@ function copyToClipboard(ele) {
     /* Alert the copied text */
     return copyText.value
 }
+function toggleMenu(id) {
+    if($(id).attr('data-toggle')==="0"){
+        $(id).addClass('show')
+        $(id).attr('data-toggle',"1")
+    }else{
+        $(id).removeClass('show')
+        $(id).attr('data-toggle',"0")
+    }
+}
+
+function collapse(id, icon) {
+    if ($(id).attr('data-text') === 'thu') {
+        $(id).text('Mở rộng')
+        $(id).attr('data-text', 'mo')
+        $(icon).css('transform', 'rotate(180deg)')
+    } else {
+        $(id).text('Thu gọn')
+        $(id).attr('data-text', 'thu')
+        $(icon).css('transform', 'rotate(0deg)')
+    }
+}
