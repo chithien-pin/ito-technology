@@ -52,6 +52,11 @@
               &:hover {
                 background-color: #F05A28;
                 color: white;
+                svg{
+                  path{
+                    stroke: #FFFFFF;
+                  }
+                }
               }
             }
           }

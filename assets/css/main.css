@@ -1059,6 +1059,9 @@
   background-color: #F05A28;
   color: white;
 }
+#ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__header .button-edit .btn:hover svg path, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__header .button-edit .btn:hover svg path {
+  stroke: #FFFFFF;
+}
 #ito-page .manage-bank-page .manage-bank-body .manage-bank-personal__body .manage-bank-personal__content .name-position p.name, #ito-page .manage-bank-page .manage-bank-body .manage-bank-social__body .manage-bank-personal__content .name-position p.name {
   color: #F05A28;
   font-weight: 700;
@@ -1975,7 +1978,7 @@
   border: 1px solid #F05A28;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
   #ito-page .information-page.share-link-01 .information-body .desktop, #ito-page .information-page.share-link-02 .information-body .desktop {
     display: none;
   }
