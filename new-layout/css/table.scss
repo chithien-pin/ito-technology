@@ -1,0 +1,79 @@
+ul.table.table-striped {
+  padding: 0;
+  &>li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 4px;
+    .icon{
+      font-size: 14px;
+      color: #696969;
+      font-weight: 400;
+    }
+    p{
+      color: #232323;
+      margin: 0;
+    }
+    &:nth-of-type(odd){
+      background: rgba(240, 240, 240, 0.4);
+    }
+    div{
+      padding: 0.75rem;
+      &.logo-bank{
+        width: 20%;
+      }
+      &.name-owner{
+        width: 50%;
+      }
+      &.number-bank{
+        width: 20%;
+      }
+      &.action{
+        width: auto;
+        button {
+          background: transparent;
+          border: 0;
+        }
+      }
+      &.title{
+        width: 25%;
+        p{
+          font-size: 16px;
+          color: #696969;
+          font-weight: 400;
+        }
+      }
+      &.content{
+        width: 75%;
+        ul {
+          padding-left: 20px;
+          list-style-type: disc;
+          li{
+            display: list-item;
+            text-align: -webkit-match-parent;
+          }
+        }
+      }
+    }
+  }
+  &.blue{
+    &>li:nth-of-type(odd){
+      background: linear-gradient(150.95deg, rgba(114, 211, 255, 0.08) -4.34%, rgba(19, 122, 194, 0.08) 103.83%);
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  ul.table.table-striped.content {
+    &>li {
+     flex-flow: column;
+      div{
+        width: 100%;
+        &.title{
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
