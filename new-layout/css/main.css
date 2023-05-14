@@ -137,13 +137,32 @@ ul.table.table-striped.blue > li:nth-of-type(odd) {
 }
 #informationPage .information-page .information-body .information-personal__body .information-personal__content .list-social {
   margin: 10px auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: 34px;
+}
+#informationPage .information-page .information-body .information-personal__body .information-personal__content .list-social.full {
+  overflow: unset;
+  height: auto;
+}
+#informationPage .information-page .information-body .information-personal__body .information-personal__content .list-social .social-item {
+  margin-bottom: 10px;
 }
 #informationPage .information-page .information-body .information-personal__body .information-personal__content .list-social .social-item:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 20px;
 }
 #informationPage .information-page .information-body .information-personal__body .information-personal__content .list-social .social-item svg {
   width: 32px;
   height: auto;
+}
+#informationPage .information-page .information-body .information-personal__body .information-personal__content .read-more {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+#informationPage .information-page .information-body .information-personal__body .information-personal__content .read-more a {
+  color: #232323;
 }
 #informationPage .information-page .information-body .information-personal__body .information-personal__content .desktop .table-information {
   border: 1px solid #1A75BA;
@@ -566,8 +585,15 @@ ul.table.table-striped.blue > li:nth-of-type(odd) {
     width: 100%;
     border-radius: 4px;
   }
+  #informationPage .information-page .information-body .information-personal__body .information-personal__content .list-social {
+    justify-content: center;
+  }
   #informationPage .information-page .information-body .information-personal__body .information-personal__content .list-social .social-item:not(:last-child) {
     margin-right: 14px;
+  }
+  #informationPage .information-page .information-body .information-personal__body .information-personal__content .read-more {
+    text-align: center;
+    margin-bottom: 15px;
   }
   #informationPage .information-page .information-body .information-personal__body .information-personal__content .desktop {
     display: none;
@@ -809,17 +835,6 @@ ul.table.table-striped.blue > li:nth-of-type(odd) {
     padding: 0;
     max-width: 100%;
     width: 100%;
-  }
-  #informationPage .information-page .information-body .information-personal__body .information-personal__content .list-social {
-    justify-content: space-evenly;
-  }
-  #informationPage .information-page .information-body .information-personal__body .information-personal__content .read-more.mobile {
-    display: block;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  #informationPage .information-page .information-body .information-personal__body .information-personal__content .read-more.mobile a {
-    color: #232323;
   }
   #informationPage .information-page .information-body .information-personal-content .block-my-profile .sub-tabs {
     border-bottom: 2px solid #F0F0F0;
